@@ -4,12 +4,38 @@ import java.util.Map;
 
 public class Anagram {
     public static void main(String[] args) {
-        System.out.println(isAnagram2("baari", "biraa"));
+        System.out.println(isAnagram2("anag", "anagt"));
     }
 
-    public static boolean isAnagram1(String str1, String str2){
+//    public static boolean isAnagram1(String str1, String str2) {
+//        boolean result = true;
+//        if (str1 == null || str2 == null || str1.equals("") || str2.equals("")) {
+//            throw new IllegalArgumentException();
+//        }
+//        if (str1.length() != str2.length())
+//            result = false;
+//        str1 = str1.toLowerCase();
+//        str2 = str2.toLowerCase();
+//
+//        char[] ch1 = str1.toCharArray();
+//        char[] ch2 = str2.toCharArray();
+//
+//        Arrays.sort(ch1);
+//        Arrays.sort(ch2);
+//
+//        for (int i = 0; i < ch1.length; i++) {
+//
+//            if (ch1[i] != ch2[i])
+//                result = false;
+//            break;
+//        }
+//
+//        return result;
+//    }
+
+    public static boolean isAnagram2(String str1, String str2) {
         boolean result = true;
-        if( str1 == null || str2 == null || str1.equals("") || str2.equals("")){
+        if (str1 == null || str2 == null || str1.equals("") || str2.equals("")) {
             throw new IllegalArgumentException();
         }
         if (str1.length() != str2.length())
@@ -17,48 +43,37 @@ public class Anagram {
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
 
-        char [] ch1 = str1.toCharArray();
-        char [] ch2 = str2.toCharArray();
+        char arr1[] = str1.toCharArray();
+        char arr2[] = str2.toCharArray();
 
-        Arrays.sort(ch1);
-        Arrays.sort(ch2);
+        Map<Character, Integer> map1 = new HashMap<Character, Integer>();
+        for (int i = 0; i < arr1.length; i++) {
+            if (map1.get(arr1[i]) == null)
+                map1.put(arr1[i], 1);
+            else {
+                Integer c = (int) map1.get(arr1[i]);
+                map1.put(arr1[i], ++c);
+            }
 
-        for (int i = 0; i < ch1.length; i++) {
+        }
 
-            if(ch1[i]!= ch2[i])
+        Map<Character, Integer> map2 = new HashMap<Character, Integer>();
+        for (int j = 0; j < arr2.length; j++) {
+            if (map2.get(arr2[j]) == null)
+                map2.put(arr2[j], 1);
+            else {
+                Integer d = (int) map2.get(arr2[j]);
+                map2.put(arr2[j], ++d);
+            }
+
+            if (map1.equals(map2)) {
+                result = true;
+            }else
                 result = false;
-                break;
-        }
 
-        return result;
-    }
-    public static boolean isAnagram2(String str1, String str2){
-        boolean result = true;
-        if ( str1 == null || str2 == null || str1.equals("") || str2.equals("")){
-            throw new IllegalArgumentException();
         }
-        if (str1.length() != str2.length())
-            result = false;
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
-
-        Map <String, Integer> map1 = new HashMap<>();
-        for (int i = 0; i < str1.length(); i++){
-            if (!map1.containsKey(str1.charAt(i)))
-                map1.put(str1.substring(i, i+1), 1);
-        }
-
-        Map <String, Integer> map2 = new HashMap<>();
-        for (int i = 0; i < str2.length(); i++){
-            if (!map2.containsKey(str2.charAt(i)))
-                map2.put(str2.substring(i, i+1), 1);
-        }
-
         System.out.println(map1);
         System.out.println(map2);
-        if (!map1.equals(map2))
-            result = false;
-
         return result;
     }
 }
