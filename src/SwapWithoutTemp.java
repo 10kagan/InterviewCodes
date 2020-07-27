@@ -1,6 +1,5 @@
 public class SwapWithoutTemp {
     public static void main(String[] args) {
-
         swap(10,20);
     }
 
@@ -12,3 +11,5 @@ public class SwapWithoutTemp {
         System.out.println(num1 +" " + num2);
     }
 }
+
+//Swap two variables's values without using temp variable.
