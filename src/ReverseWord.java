@@ -3,7 +3,6 @@ public class ReverseWord {
         System.out.println(reverse2("ali ipe kos"));
     }
 
-
     public static String reverse2 (String str){
 
         String result = "";
@@ -23,8 +22,6 @@ public class ReverseWord {
         }
 
         return result;
-
-
 
     }
 
