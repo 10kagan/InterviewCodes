@@ -1,6 +1,6 @@
 public class ReverseSentence {
     public static void main(String[] args) {
-        System.out.println(reverse("Tsubasa Ozoro"));
+        System.out.println(reverse("Tsubasa Ozoro aaa aaa bbb ccc"));
     }
 
     public static String reverse(String str){
