@@ -20,6 +20,4 @@ public class CountLetters {
     }
 }
 
-//5.Write a method which returns how many times each letter is repeated?
-//Integer d = (int) map2.get(arr2[j]);
-//                map2.put(arr2[j], ++d);
+// Write a method which returns how many times each letter is repeated?
