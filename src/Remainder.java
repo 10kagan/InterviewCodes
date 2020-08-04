@@ -1,6 +1,6 @@
 public class Remainder {
     public static void main(String[] args) {
-        System.out.println(findRemainder(30,9));
+        System.out.println(findRemainder(40,3));
     }
     public static int findRemainder(int dividend, int divisor){
         int quotient = 0;
