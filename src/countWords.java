@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class countWords {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class countWords {
     public static Map<String, Integer> Count(String str){
         str=str.toLowerCase();
         String [] arrWords = str.split(" ");
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new TreeMap<>();
         for (int i = 0; i < arrWords.length; i++) {
             if(!map.containsKey(arrWords[i]))
                 map.put(arrWords[i], 1);
