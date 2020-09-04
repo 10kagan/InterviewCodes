@@ -8,7 +8,7 @@ public class GetRidOfMultipleSpace {
         String word = "  ...and  justice for all!  ";
         System.out.println(withoutMultipleSpace(word));
     }
-    public static List<Character> withoutMultipleSpace(String str){
+    public static String withoutMultipleSpace(String str){
         List<Character> list = new ArrayList<>();
         for (int j = 0; j < str.length(); j++) {
             list.add(str.charAt(j));
@@ -19,7 +19,9 @@ public class GetRidOfMultipleSpace {
                 list.remove(i);
         }
         String result = "";
-
-        return list;
+        for (char each: list) {
+            result = result + each;
+        }
+        return result;
     }
 }
