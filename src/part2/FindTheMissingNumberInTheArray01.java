@@ -1,6 +1,6 @@
 package part2;
 
-public class FindTheMissingNumberInTheArray {
+public class FindTheMissingNumberInTheArray01 {
     public static void main(String[] args) {
         int [] nums = {2,4,6,1,5,8,7,3};
         System.out.println("missing number is: "+findMissingNumber(nums));
