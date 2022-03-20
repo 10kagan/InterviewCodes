@@ -5,9 +5,9 @@ import java.util.Map;
 
 public class CountLetters {
     public static void main(String[] args) {
-        System.out.println(countLetter("ahmet ahmed"));
+        System.out.println(countLetter("ahmet ahmed jjjjjkkkll 3"));
     }
-    public static  Map<String, Integer> countLetter(String str){
+    public static Map<String, Integer> countLetter(String str){
         Map<String, Integer> map = new HashMap<>();
         String [] strArr = str.split("");
 

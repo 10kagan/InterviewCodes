@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Anagram {
     public static void main(String[] args) {
-        System.out.println(isAnagram2("anag", "anagt"));
+        System.out.println(isAnagram2("masa", "asma"));
     }
 
 //    public static boolean isAnagram1(String str1, String str2) {
@@ -56,7 +56,6 @@ public class Anagram {
                 Integer c = (int) map1.get(arr1[i]);
                 map1.put(arr1[i], ++c);
             }
-
         }
 
         Map<Character, Integer> map2 = new HashMap<Character, Integer>();

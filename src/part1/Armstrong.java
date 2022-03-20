@@ -2,7 +2,9 @@ package part1;
 
 public class Armstrong {
     public static void main(String[] args) {
+
         System.out.println("Is the number armstrong? " + isArmstrong(153));
+
     }
     public static boolean isArmstrong(int num){
         int sum = 0;
