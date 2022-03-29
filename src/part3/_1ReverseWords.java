@@ -1,6 +1,6 @@
 package part3;
 
-public class _3ReverseWords {
+public class _1ReverseWords {
     public static void main(String[] args) {
         String sentence = "bir iki uc dort";
         revWords(sentence);
