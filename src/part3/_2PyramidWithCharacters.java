@@ -14,14 +14,13 @@ public class _2PyramidWithCharacters {
         for (int i = 0; i <= rows; i++){
             int numberOfWhiteSpace = rows - i;
             printString(" ", numberOfWhiteSpace);
-            printString("* ", i);
-            System.out.println("");
+            printString(" *", i);
+            System.out.println(" ");
         }
     }
     public static void printString(String s, int times){
-        for (int j = 1; j < times; j++){
+        for (int j = 0; j < times; j++){
             System.out.print(s);
         }
     }
-
 }
