@@ -1,4 +1,4 @@
-package part4;
+package part4.String;
 
 public class _3FindAllSubstring {
     public static void main(String[] args) {
