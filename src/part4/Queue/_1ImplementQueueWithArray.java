@@ -67,5 +67,6 @@ public class _1ImplementQueueWithArray {
         queue.dequeue();
         queue.enqueue(32);
         queue.enqueue(232);
+        queue.dequeue();
     }
 }
