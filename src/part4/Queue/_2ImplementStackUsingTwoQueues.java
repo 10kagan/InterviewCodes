@@ -26,7 +26,31 @@ public class _2ImplementStackUsingTwoQueues {
     }
     public int pop(){
         if (queue1.size() == 0)
-            throw mew QueueEmptyException("Underflow Exception");
+            throw new QueueEmptyException("Underflow Exception");
         return queue1.remove();
     }
+
+    public static void main(String[] args) {
+        _2ImplementStackUsingTwoQueues stack = new _2ImplementStackUsingTwoQueues();
+        stack.push(20);
+        stack.push(40);
+        stack.push(70);
+        stack.push(50);
+        stack.push(90);
+        stack.push(110);
+        stack.push(30);
+        System.out.println("Removed element : "+ stack.pop());
+        stack.push(170);
+        System.out.println("Removed element : "+ stack.pop());
+    }
+}
+class QueueEmptyException extends RuntimeException{
+    private static final long serialVersionUID = 1L;
+
+    public QueueEmptyException() {
+        super();
+    }
+
+    public QueueEmptyException(String message) {
+        super(message);
 }
