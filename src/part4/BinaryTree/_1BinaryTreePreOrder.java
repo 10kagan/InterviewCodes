@@ -1,4 +1,4 @@
-package part4;
+package part4.BinaryTree;
 
 import java.util.Stack;
 
