@@ -5,6 +5,7 @@ public class _13SecondMostFrequentCharInString {
     public static void main(String[] args) {
 
         String target ="SEcond most frequentffffee";
+
         char result = getSecondMostFreq(target);
         System.out.println(result);
     }

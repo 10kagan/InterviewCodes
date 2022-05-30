@@ -5,8 +5,8 @@ public class _30LongestCommonPrefix {
         String[] strArr={"java2blog","javaworld","javabean","javatemp"};
         String longestPrefix=getLongestCommonPrefix(strArr);
         System.out.println("Longest Prefix : "+longestPrefix);
-
     }
+    
     public static String getLongestCommonPrefix(String [] strArr){
         if (strArr.length == 0) return "";
         String minStr = getMinString(strArr);

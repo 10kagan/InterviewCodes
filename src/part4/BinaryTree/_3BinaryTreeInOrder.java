@@ -47,7 +47,6 @@ public class _3BinaryTreeInOrder {
         System.out.println("Using Iterative solution:");
 
         bi.inOrderIter(rootNode);
-
     }
     public static TreeNode createBinaryTree(){
         TreeNode rootNode =new TreeNode(40);

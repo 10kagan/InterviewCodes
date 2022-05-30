@@ -17,6 +17,7 @@ public class _8PrimeNumbers {
                 return false;
         }
         return true;
+
     }
 }
 

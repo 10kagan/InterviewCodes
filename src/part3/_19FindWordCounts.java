@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class _19FindWordCounts {
     public static void main(String[] args) {
-        String sentence = "kalem kalem silgi ail al ver 1 bir";
+        String sentence = "kalem kalem silgi ail al ver 1 bir al al";
         System.out.println(wordCount(sentence));
     }
     public static Map<String, Integer> wordCount(String sentence){
