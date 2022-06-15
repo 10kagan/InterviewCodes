@@ -1,8 +1,8 @@
 package part4.Graph;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class DijkstraShortestPath {
@@ -33,7 +33,7 @@ public class DijkstraShortestPath {
         for (Vertex vertex = targetVertex; vertex != null; vertex = vertex.getPredecessor()){
             path.add(vertex);
         }
-        Collations.reverse(path);
+        Collections.reverse(path);
         return path;
     }
 
@@ -77,15 +77,4 @@ public class DijkstraShortestPath {
     }
 }
 
-public class Vertex implements Comparable<Vertex>{
-    private String name;
-    private List<Edge> adjacenciesList;
-    private boolean visited;
-    private Vertex predecessor;
-    private double distance = Double.MAX_VALUE;
 
-    public Vertex(String name){
-        this.name = name;
-        this.adjacenciesList = new ArrayList<>();
-    }
-}
