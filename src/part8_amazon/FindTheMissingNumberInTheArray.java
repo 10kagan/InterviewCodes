@@ -19,3 +19,10 @@ public class FindTheMissingNumberInTheArray {
         return result;
     }
 }
+
+/*
+Runtime Complexity: Linear, O(n)
+
+Memory Complexity: Constant, O(1)
+
+ */
