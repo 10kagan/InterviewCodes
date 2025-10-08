@@ -1,4 +1,4 @@
-package part9_leetcode75;
+package part9_leetcode75.StringArray;
 
 
 public class MergeStringsAlternately {

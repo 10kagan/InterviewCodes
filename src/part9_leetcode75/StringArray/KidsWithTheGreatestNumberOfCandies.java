@@ -1,4 +1,4 @@
-package part9_leetcode75;
+package part9_leetcode75.StringArray;
 
 import java.util.ArrayList;
 import java.util.List;

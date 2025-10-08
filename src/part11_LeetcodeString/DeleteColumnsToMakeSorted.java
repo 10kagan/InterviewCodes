@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class DeleteColumnsToMakeSorted {
     public static void main(String[] args) {
-        String [] strs = {"zyx","wvu","tsr"};
+        String [] strs = {"cba","daf","ghi"};
 //        Output: 1
 //        Explanation: The grid looks as follows:
 //        cba
@@ -19,9 +19,11 @@ public class DeleteColumnsToMakeSorted {
         for (int i = 0; i < strs[0].length(); i++){
             String [] arr = new String[strs.length];{
                 for (int j = 0; j < strs.length; j++){
-                    arr[j] = String.valueOf(strs[i].charAt(j));
+                    arr[j] = String.valueOf(strs[j].charAt(i));
                 }
             }
+            System.out.println(Arrays.toString(arr));
+
             String[] sortedArr = arr.clone();
             Arrays.sort(sortedArr);
             if (!Arrays.equals(arr, sortedArr)) {

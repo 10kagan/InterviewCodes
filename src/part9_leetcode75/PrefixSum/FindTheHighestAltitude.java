@@ -1,4 +1,4 @@
-package part9_leetcode75;
+package part9_leetcode75.PrefixSum;
 
 public class FindTheHighestAltitude {
     public static void main(String[] args) {
