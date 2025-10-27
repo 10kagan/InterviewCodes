@@ -41,3 +41,7 @@ public class LongestUniqueSubstring {
     }
 }
 // Implement a function to find the longest substring without repeating characters.
+
+//“Bu çözüm O(n) zaman karmaşıklığına sahiptir çünkü her karakter en fazla 2 kez gezilir.
+// HashSet ile her karakterin tekrarını kontrol ediyoruz.
+// Sliding Window yaklaşımı sayesinde gereksiz kontroller yapılmaz.”
