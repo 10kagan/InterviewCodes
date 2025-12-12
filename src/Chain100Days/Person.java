@@ -2,7 +2,7 @@ package Chain100Days;
 
 import java.util.Objects;
 
-public class Persons {
+class Persons {
     private int id;
     private String name;
 
