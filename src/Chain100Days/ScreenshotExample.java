@@ -21,7 +21,7 @@ public class ScreenshotExample {
         File source = ts.getScreenshotAs(OutputType.FILE);
 
         File destination = new File("screenshot.png");
-        Files.copy(source.toPath(), destination.toPath());
+        //Files.copy(source.toPath(), destination.toPath());
 
         driver.quit();
     }
