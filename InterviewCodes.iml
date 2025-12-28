@@ -28,6 +28,7 @@
     </orderEntry>
     <orderEntry type="library" name="mockito.core" level="project" />
     <orderEntry type="library" name="jayway.restassured.rest.assured" level="project" />
-    <orderEntry type="library" name="ch.racic.selenium.helper.SeleniumDownloadHelper" level="project" />
+    <orderEntry type="library" name="selenium-support-3.141.59.jar" level="project" />
+    <orderEntry type="library" name="seleniumhq.selenium.java" level="project" />
   </component>
 </module>
