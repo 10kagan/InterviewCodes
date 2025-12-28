@@ -27,7 +27,7 @@ public class LoginTest {
         loginButton.click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.id("logoutBtn")
+                By.id("logoutBtn")));
 
         System.out.println("Login Successfully");
 
