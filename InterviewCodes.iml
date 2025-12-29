@@ -30,5 +30,6 @@
     <orderEntry type="library" name="jayway.restassured.rest.assured" level="project" />
     <orderEntry type="library" name="selenium-support-3.141.59.jar" level="project" />
     <orderEntry type="library" name="seleniumhq.selenium.java" level="project" />
+    <orderEntry type="library" name="atlassian.oai.swagger.request.validator.restassured" level="project" />
   </component>
 </module>
